@@ -30,28 +30,28 @@ function openPlayground(evt, playgroundName) {
     document.getElementById(playgroundName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+document.getElementById("defaultOpen").click();
 
+const clipboard = document.querySelector("#clipboard");
+const tooltip = document.querySelector("#myTooltip");
+clipboard.addEventListener("click", () => {
+    /* Select the text field */
 
-    const clipboard = document.querySelector("#clipboard");
-    const tooltip = document.querySelector("#myTooltip");
-    clipboard.addEventListener("click", () => {
-        /* Select the text field */
+    const copyText = document.querySelector("#mail");
+    copyText.focus();
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-        const copyText = document.querySelector("#mail");
-        copyText.focus();
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
 
-        /* Copy the text inside the text field */
-        document.execCommand("copy");
+    /* Alert the copied text */
+    tooltip.innerHTML = "Copied";
+});
 
-        /* Alert the copied text */
-        tooltip.innerHTML = "Copied";
-    });
-
-    tooltip.addEventListener("mouseout", () => {
-        tooltip.innerHTML = "Copy";
-    })
+tooltip.addEventListener("mouseout", () => {
+    tooltip.innerHTML = "Copy";
+})
 
 
 
