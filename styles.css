@@ -15,64 +15,97 @@ html {
 	margin-bottom: 5vh;
 }
 
-/* Header */
+/* Global Setting */
+
 a {
 	text-decoration: none;
 	color: black;
 }
-	a:hover{
-	color: lightseagreen;
-	transition: 0.2s;
-	}
+a:hover{
+color: lightseagreen;
+transition: 0.2s;
+}
+
 ul {
 	padding-left: 0;
 }
-	li {
-		list-style: none;
-		
-	}
-	.menu > li{
-		text-transform: uppercase;
-		padding-right: 30px;
-	}
+
+li {
+	list-style: none;
+	
+}
+
+h1{
+	/* 3.125 */
+	font-size: calc(32px + (50 - 32) * ((100vw - 360px) / (1600 - 300)));
+	margin-bottom: 0;
+}
+
+h2{
+	font-size: calc(18px +(24 - 18) * ((100vw - 360px) / (1600 - 300)));
+}
+
+h3{
+	font-size: calc(16px +(18 - 16) * ((100vw - 360px) / (1600 - 300)));
+}
+
+/* Header/Navbar */
+
 .logo img {
 	width: 50px;
 }
 
-header {
+.navbar {
 	padding: 1rem 7rem;
 }
 
-header {
+.navbar {
+	display: flex;
 	position: sticky;
 	top: 0;
 	z-index: 1;
-    background: white;
-    display: grid;
-	gap: 2rem;
+	background: white;
+	justify-content: space-between;
 	align-items: center;
-	grid-template-columns: max-content auto;
 }
 
-	header.under{
-		border-bottom: 1px solid rgb(221, 221, 221);
-	}
-
-nav {
-	justify-self: end;
+.navbar.under{
+	border-bottom: 1px solid rgb(221, 221, 221);
 }
-ul {
+
+.main-menu {
+	height: 100%;
+}
+
+.menu{
 	display: flex;
-	flex-wrap: wrap;
-	gap: 0 2rem;
 }
-@supports not (gap: 1rem) {
-	li {
-		margin: 0 0.5rem;
-	}
-	/* li:nth-of-type(1) {
-		margin-left: 0;
-	} */
+
+.menu > li{
+	text-transform: uppercase;
+	padding-right: 30px;
+}
+
+.menu li a{
+	display: block;
+}
+
+.toggle-button{
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 25px;
+	height: 25px;
+}
+
+.toggle-button .bar {
+	height: 2px;
+	width: 100%;
+	background-color: #000;
+	border-radius: 10px;
 }
 
 /* Main Content */
@@ -81,13 +114,15 @@ main{
     padding: 2rem 7rem;
 }
 
-h1{
-	/* 3.125 */
-    font-size: calc(32px + (50 - 32) * ((100vw - 360px) / (1600 - 300)));
-}
-.headerHome{
+
+#headerHome{
 	margin-top: 0;
 }
+
+#available{
+	margin-top: 20px;
+}
+
 .getintouch{
     text-decoration: none;
     background-color: black;
@@ -98,10 +133,26 @@ h1{
     text-align: center;
 }
 
-/* Work */
+.see-more{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+	text-align: center;
+	margin: 20px 0;
+	max-width: 130px;
+}
 
+.see-more a {
+	color: #fff;
+}
+
+/* Work */
+.featured{
+	padding: 0 0 5rem 0;
+}
 .home, .work{
-	padding: 0.5rem 0 5rem 0;
+	padding: 0.5rem 0;
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -125,16 +176,6 @@ p{
 }
 
 /* Work Detail */
-h1{
-	margin-bottom: 0;
-}
-h2{
-	font-size: calc(18px +(24 - 18) * ((100vw - 360px) / (1600 - 300)));
-}
-
-h3{
-	font-size: calc(16px +(18 - 16) * ((100vw - 360px) / (1600 - 300)));
-}
 
 .workHeaderTitle h3{
 	color: #999;
@@ -155,14 +196,14 @@ h3{
 	overflow: hidden;
 	background-color: #ffffff;
 	border-bottom: 1px solid black;
-  }
+}
 
-  .tablinks{
-	  text-transform: uppercase;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
+.tablinks{
+	text-transform: uppercase;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
 	background-color: inherit;
 	float: center;
 	border: none;
@@ -172,27 +213,28 @@ h3{
 	transition: 0.3s;
 	font-size: 16px;
 	font-family: inherit;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-	text-decoration: underline;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-	text-decoration: underline;
-  }
-   
-  .tabcontent {
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	color: lightseagreen;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+	font-weight: bold;
+	color: lightseagreen;
+}
+
+.tabcontent {
 	display: none;
 	animation: fadeEffect 1s;
-  }
+}
 
-	@keyframes fadeEffect {
-		from {opacity: 0;}
-		to {opacity: 1;}
-	}
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
 
 .playground {
 	display: grid;
@@ -224,14 +266,26 @@ footer{
 	gap: 2rem;
 	align-items: center;
 	grid-template-columns: max-content auto auto;
+	border-top: 1px solid rgb(236, 236, 236);
 }
 
 footer{
-	padding: 2rem 7rem;
+	padding: 1rem 7rem;
+}
+
+footer > nav {
+	justify-self: end;
 }
 
 .social-media > li{
-	padding-right: 30px;
+	padding: 0 15px;
+}
+
+.email, .social-media{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+
 }
 
 .email > li{
@@ -256,9 +310,9 @@ footer{
 .tooltip {
 	position: relative;
 	display: inline-block;
-  }
+}
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
 	visibility: hidden;
 	width: 120px;
 	background-color: rgb(0,0,0);
@@ -273,9 +327,9 @@ footer{
 	margin-left: -75px;
 	opacity: 0;
 	transition: opacity 0.3s;
-  }
-  
-  .tooltip .tooltiptext::after {
+}
+
+.tooltip .tooltiptext::after {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -284,26 +338,107 @@ footer{
 	border-width: 5px;
 	border-style: solid;
 	border-color: rgb(0, 0, 0) transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
-  }
+}
 
 /* Responsive */
 @media screen and (max-width: 768px){
-	header, main, footer {
+	.navbar, main, footer {
 		padding: 1rem 1rem;
+	}
+
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.toggle-button{
+		display: flex;
+	}
+
+	.main-menu{
+		display: none;
+		width: 100%;
+	}
+
+	.menu{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.menu > li {
+		text-align: center;
+		padding-right: 0;
+	}
+
+	.menu >li:first-child{
+		display: none;
+	}
+
+	.menu li a{
+		padding: 1rem 1rem;
+	}
+
+	.main-menu.active{
+		display: flex;
+	}
+
+	#headerHome{
+		font-size: 40px;
 	}
 
 	footer{
 		grid-template-columns: 1fr;
 		justify-self: center;
 		align-self: center;
+		text-align: center;
+		gap: 0;
+	}
+
+	.tooltip .tooltiptext {
+		bottom: 100%;
+		left: 50%;
+		margin-left: -60px;
+	}
+
+	.email > li{
+		padding: 10px;
+	}
+	.social-media > li:first-child{
+		display: none;
+	}
+
+	footer > nav {
+		justify-self: center;
+	}
+
+	footer > p{
+		display: none;
 	}
 	
 }
+
+.toggle-button.active .bar:nth-child(2){
+	opacity: 0;
+  }
+  
+  .toggle-button.active .bar:nth-child(1){
+	-webkit-transform: translateY(12px) rotate(45deg);
+	-ms-transform: translateY(12px) rotate(45deg);
+	-o-transform: translateY(12px) rotate(45deg);
+	transform: translateY(12px) rotate(45deg);
+  }
+  
+  .toggle-button.active .bar:nth-child(3){
+	-webkit-transform: translateY(-12px) rotate(-45deg);
+	-ms-transform: translateY(-12px) rotate(-45deg);
+	-o-transform: translateY(-12px) rotate(-45deg);
+	transform: translateY(-12px) rotate(-45deg);
+  }
 
 /* Hand Wave Animation */
 /* by https://jarv.is/notes/css-waving-hand-emoji/ */
@@ -313,14 +448,14 @@ span.wave {
 	animation-iteration-count: infinite;    /* Never stop waving :) */
 	transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
 	display: inline-block;
-  }
+}
   
-  @keyframes wave-animation {
-	  0% { transform: rotate(  0.0deg) }
-	 10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
-	 20% { transform: rotate( 12.0deg) }
-	 30% { transform: rotate(-10.0deg) }
-	 40% { transform: rotate(  9.0deg) }
-	 50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
+@keyframes wave-animation {
+	0% { transform: rotate(  0.0deg) }
+	10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
+	20% { transform: rotate( 12.0deg) }
+	30% { transform: rotate(-10.0deg) }
+	40% { transform: rotate(  9.0deg) }
+	50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
 	100% { transform: rotate(  0.0deg) }
-  }
+}

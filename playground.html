@@ -11,9 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo"><img src="asset/logo/LogoHeader.png" alt="Ammar's Logo"></a>
-        <nav role="navigation" class="main-menu"> 
+    <nav class="navbar">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="asset/logo/LogoHeader.png" alt="Ammar's Logo">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="main-menu"> 
             <ul class="menu">
                 <li>&#8618;</li>
                 <li><a href="index.html">Home</a></li>
@@ -22,8 +31,8 @@
                 <li><a href="about.html">About</a></li>
             </ul>
             <!-- &#9776; -->
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
         <section class="playgrounds">
@@ -36,7 +45,9 @@
         
             <div id="Design" class="tabcontent">
                 <ul class="playground">
-                    <li> <img src='asset/playground/1.png'></li>
+                    <!-- <li> <img src='asset/playground/1.png'></li>
+                    <li> <img src='asset/playground/2.png'></li>
+                    <li> <img src='asset/playground/3.png'></li> -->
                 </ul>
             </div>
         
@@ -53,11 +64,11 @@
     </main>
 
     <footer>
-        &copy; Copyright 2020, Abdullah Ammar
+        <p>&copy; Copyright 2020, Abdullah Ammar</p>
         <nav role="email">
             <ul class="email">
-                <li id="clipboard" class="tooltip"><span class="tooltiptext" id="myTooltip">Copy</span></li>
-                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" disabled></li>
+                <li id="clipboard" class="tooltip"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></li>
+                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
             </ul>
         </nav>
         <nav role="social-media">
@@ -72,5 +83,6 @@
     </footer>
 
     <script src="function.js"></script>
+    <script src="playground.js"></script>
 </body>
 </html>

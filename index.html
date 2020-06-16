@@ -11,9 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo"><img src="asset/logo/LogoHeader.png" alt="Ammar's Logo"></a>
-        <nav role="navigation" class="main-menu"> 
+    <nav class="navbar">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="asset/logo/LogoHeader.png" alt="Ammar's Logo">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="main-menu"> 
             <ul class="menu">
                 <li>&#8618;</li>
                 <li><a href="index.html">Home</a></li>
@@ -22,19 +31,19 @@
                 <li><a href="about.html">About</a></li>
             </ul>
             <!-- &#9776; -->
-        </nav>
-    </header>
+        </div>
+    </nav>
     
     <main>
         <section>       
             <span class="wave"><h1>&#x1F44B;</h1></span>
-            <h1 class="headerHome">Hello! I'm Ammar</br>Student and Graphic Design Enthusiast</br>Based in Jakarta, Indonesia</h1>
-            <p>&#8618; Open for internship and remote-working</p>
+            <h1 id="headerHome">Hello! I'm Ammar<br/>Student and Graphic Design Enthusiast<br/>Based in Jakarta, Indonesia</h1>
+            <p id="available">&#8618; Open for internship and remote-working</p>
             <button class="getintouch"><strong>Get in touch &rarr;</strong></button>
         </section>
         
         
-        <section>
+        <section class="featured">
             <h2>Featured &#8628;</h2>
             <div class="home">
                 <article>
@@ -53,6 +62,9 @@
                     <p><small>2018 | Brand Identity</small></p>
                 </article>
             </div>
+            <div class="see-more">
+                <a href="work.html">See More &rarr;</a>
+            </div>
         </section>
         
         
@@ -63,16 +75,18 @@
                 <li> <img src="asset/playground/14.png"> </li>
                 <li> <img src="asset/playground/12.png"> </li>
             </ul>
-            <p align="right"><a href="playground.html" >See More &rarr;</a></p>
+            <div class="see-more">
+                <a href="playground.html">See More &rarr;</a>
+            </div>
         </section>    
     </main>
     
     <footer>
-        &copy; Copyright 2020, Abdullah Ammar
+        <p>&copy; Copyright 2020, Abdullah Ammar</p>
         <nav role="email">
             <ul class="email">
-                <li id="clipboard" class="tooltip"><span class="tooltiptext" id="myTooltip">Copy</span></li>
-                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" disabled></li>
+                <li id="clipboard" class="tooltip"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></li>
+                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
             </ul>
         </nav>
         <nav role="social-media">

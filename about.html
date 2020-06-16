@@ -11,9 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo"><img src="asset/logo/LogoHeader.png" alt="Ammar's Logo"></a>
-        <nav role="navigation" class="main-menu"> 
+    <nav class="navbar">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="asset/logo/LogoHeader.png" alt="Ammar's Logo">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="main-menu"> 
             <ul class="menu">
                 <li>&#8618;</li>
                 <li><a href="index.html">Home</a></li>
@@ -22,8 +31,8 @@
                 <li><a href="about.html">About</a></li>
             </ul>
             <!-- &#9776; -->
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
         <section class="about">
@@ -33,26 +42,25 @@
     
             <p>I'm a computer science student and graphic design enthusiast from Jakarta, Indonesia.</br>
             Currently create a bi-weekly poster and sells some goods. I am passionate about visual arts,</br>
-            and solving problems with the right solutions through creative ways to solve it.</p></br>
+            and problem solving.</p></br>
             <p>I enjoy explore the city, draw some stuff and capture a moment.</p>
     
             <h3>Now &#8628;</h3>
             <ul class="now">
                 <li>&rarr; Studying Computer Science at ESQ Business School</li>
-                <li>&rarr; Designing & illustration at <a href="0#">Suntree</a> </li>
-                <li>&rarr; Designing bi-weekly poster at <a href="0#">Qwexzcy</a></li>
-                <li>&rarr; Graphic Design mentor at <a href="0#">Golden Techno</a></li>
-                <li>&rarr; Building a portfolio web (freebie) </li>
+                <li>&rarr; Designing & illustration at <a href="https://www.instagram.com/wearsuntree">Suntree</a> </li>
+                <li>&rarr; Designing bi-weekly poster at <a href="https://www.instagram.com/qwexzcy">Qwexzcy</a></li>
+                <li>&rarr; Learning <a href="https://roadmap.sh/frontend">Frontend Development</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        &copy; Copyright 2020, Abdullah Ammar
+        <p>&copy; Copyright 2020, Abdullah Ammar</p>
         <nav role="email">
             <ul class="email">
-                <li id="clipboard" class="tooltip"><span class="tooltiptext" id="myTooltip">Copy</span></li>
-                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" disabled></li>
+                <li id="clipboard" class="tooltip"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></li>
+                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
             </ul>
         </nav>
         <nav role="social-media">
@@ -65,5 +73,7 @@
         </nav>
         <!-- <span title="Back To Top">&#9651;</span> -->
     </footer>
+
+    <script src="function.js"></script>
 </body>
 </html>
