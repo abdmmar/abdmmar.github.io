@@ -124,32 +124,44 @@ main{
 }
 
 .getintouch{
+	cursor: pointer;
     text-decoration: none;
     background-color: black;
     color: white;
     padding: 1rem;
     margin: 3rem 0 12rem 0;
     border: none;
-    text-align: center;
+	text-align: center;
+	
+	
 }
 
 .see-more{
+	margin: 40px 0;
+}
+.see-more a{
     text-decoration: none;
     background-color: black;
     color: white;
-    padding: 1rem;
+	padding: 0.5rem 2rem;
+	border-radius: 0.5rem;
 	text-align: center;
 	margin: 20px 0;
 	max-width: 130px;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-out;
 }
 
-.see-more a {
-	color: #fff;
+.see-more a:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 50px 10px #f0f0f0;
 }
 
 /* Work */
 .featured{
-	padding: 0 0 5rem 0;
+	padding: 5rem 0 5rem 0;
 }
 .home, .work{
 	padding: 0.5rem 0;
@@ -246,6 +258,10 @@ p{
 		margin-top: 0.5rem;
 	}
 
+	.playground > li > img{
+		border-radius: 0.5rem;
+	}
+
 
 
 /* About */
@@ -326,7 +342,7 @@ footer > nav {
 	left: 50%;
 	margin-left: -75px;
 	opacity: 0;
-	transition: opacity 0.3s;
+	transition: opacity 0.4s;
 }
 
 .tooltip .tooltiptext::after {
