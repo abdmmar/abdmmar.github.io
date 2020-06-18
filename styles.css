@@ -12,7 +12,7 @@ html {
 }
 
 .title{
-	margin: 90px 0 5vh;
+	margin-bottom: 5vh;
 }
 
 /* Global Setting */
@@ -21,9 +21,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
 a:hover{
-	font-weight: black;
-	transition: 0.2s;
+	text-decoration: underline;
 }
 
 ul {
@@ -115,11 +115,7 @@ img{
 /* Main Content */
 
 main{
-    padding: 2rem 7rem;
-}
-
-.wave h1{
-	margin-top: 90px;
+    padding: 5rem 7rem;
 }
 
 #headerHome{
@@ -133,7 +129,7 @@ main{
 .see-more{
 	margin: 40px 0;
 }
-.see-more a{
+.see-more a, .back a{
     text-decoration: none;
     background-color: white;
     color: black;
@@ -147,7 +143,7 @@ main{
 	transition-timing-function: ease-out;
 }
 
-.see-more a:hover{
+.see-more a:hover, .back a:hover{
 	cursor: pointer;
 	background-color: black;
 	color: white;
@@ -163,7 +159,6 @@ main{
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
 }
 
 .home > article, .work > article{
@@ -185,12 +180,15 @@ p{
 }
 
 /* Work Detail */
+.back {
+	padding: 50px 0 2rem 150px;
+}
+
 .workHeader{
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: space-between;
 	gap: 2rem;
-	margin-top: 90px;
 }
 .workHeaderTitle{
 	padding-left: 150px;
@@ -206,15 +204,17 @@ p{
 }
 
 .workHeaderDescription{
-	padding-right: 100px ;
+	padding-right: 150px ;
 }
 
 .workHeaderDescription h2{
 	margin: 15px 0;
+	text-align: end;
 }
 
 .workJumbotron{
 	width: 100%;
+	align-items: center;
 	height: auto;
 }
 
@@ -248,7 +248,7 @@ p{
 	border: 1px solid #000;
 	text-align: center;
 	border-radius: 2rem;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
 }
 
 /* Change background color of buttons on hover */
@@ -261,7 +261,7 @@ p{
 .tab button.active {
 	background-color: black;
 	color: white;
-	border: none;
+	border: 1px solid #000;
 }
 
 .tabcontent {
@@ -281,14 +281,28 @@ p{
 	grid-gap: 3rem;	
 }
 
-	.playground > li{
-		margin-top: 0.5rem;
-	}
+.playground > li{
+	margin-top: 0.5rem;
+}
 
-	.playground > li > img{
-		border-radius: 0.5rem;
-	}
+.playground > li > img{
+	border-radius: 0.5rem;
+}
 
+.playgroundCode{
+	padding: 0.5rem 0;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+}
+
+.playgroundCode > article{
+	padding: 1rem;
+	display: flex;
+	flex-flow: column;
+	border:  0.5px solid rgb(221, 221, 221);
+  	border-radius: 0.5rem;
+}
 
 
 /* About */
@@ -334,12 +348,15 @@ footer > nav {
 
 }
 
-.email > li{
-	padding-right: 30px;
-}
+/* .email > li:first-child{
+	padding-left: 30px;
+} */
 
 #clipboard::before{
 	content: '📋';
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 0.5rem;
 }
 
 #mail{
@@ -368,9 +385,9 @@ footer > nav {
 	padding: 5px;
 	position: absolute;
 	z-index: 1;
-	bottom: 150%;
+	bottom: 180%;
 	left: 50%;
-	margin-left: -75px;
+	margin-left: -60px;
 	opacity: 0;
 	transition: opacity 0.4s;
 }
@@ -476,6 +493,13 @@ footer > nav {
 	
 }
 
+@media screen and (max-width: 1150px){
+
+	footer > p{
+		display: none;
+	}
+}
+
 .toggle-button.active .bar:nth-child(2){
 	opacity: 0;
   }
@@ -500,7 +524,7 @@ span.wave {
 	animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
 	animation-duration: 2.5s;          /* Change to speed up or slow down */
 	animation-iteration-count: infinite;    /* Never stop waving :) */
-	transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
+	transform-origin: 70% 100%;         /* Pivot around the bottom-left palm */
 	display: inline-block;
 }
   
