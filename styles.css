@@ -12,7 +12,7 @@ html {
 }
 
 .title{
-	margin-bottom: 5vh;
+	margin: 90px 0 5vh;
 }
 
 /* Global Setting */
@@ -22,8 +22,8 @@ a {
 	color: black;
 }
 a:hover{
-color: lightseagreen;
-transition: 0.2s;
+	font-weight: black;
+	transition: 0.2s;
 }
 
 ul {
@@ -47,6 +47,10 @@ h2{
 
 h3{
 	font-size: calc(16px +(18 - 16) * ((100vw - 360px) / (1600 - 300)));
+}
+
+img{
+	width: 100%;
 }
 
 /* Header/Navbar */
@@ -114,6 +118,9 @@ main{
     padding: 2rem 7rem;
 }
 
+.wave h1{
+	margin-top: 90px;
+}
 
 #headerHome{
 	margin-top: 0;
@@ -123,28 +130,16 @@ main{
 	margin-top: 20px;
 }
 
-.getintouch{
-	cursor: pointer;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    margin: 3rem 0 12rem 0;
-    border: none;
-	text-align: center;
-	
-	
-}
-
 .see-more{
 	margin: 40px 0;
 }
 .see-more a{
     text-decoration: none;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 	padding: 0.5rem 2rem;
-	border-radius: 0.5rem;
+	border-radius: 2rem;
+	border: 1px solid black;
 	text-align: center;
 	margin: 20px 0;
 	max-width: 130px;
@@ -154,15 +149,15 @@ main{
 
 .see-more a:hover{
 	cursor: pointer;
-	background-color: white;
-	color: black;
-	box-shadow: 0 0 50px 10px #f0f0f0;
+	background-color: black;
+	color: white;
 }
 
 /* Work */
 .featured{
 	padding: 5rem 0 5rem 0;
 }
+
 .home, .work{
 	padding: 0.5rem 0;
 	display: grid;
@@ -170,6 +165,7 @@ main{
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
+
 .home > article, .work > article{
 	padding: 1rem;
 	display: flex;
@@ -177,7 +173,8 @@ main{
 	border:  0.5px solid rgb(221, 221, 221);
   	border-radius: 0.5rem;
 }
-img{
+
+.work img{
 	width: 100%;
 }
 .work h3{
@@ -188,10 +185,32 @@ p{
 }
 
 /* Work Detail */
+.workHeader{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-top: 90px;
+}
+.workHeaderTitle{
+	padding-left: 150px;
+}
+
+.workHeaderTitle h1{
+	margin-top: 0;
+}
 
 .workHeaderTitle h3{
 	color: #999;
 	margin: 10px 0 0.3rem 0;
+}
+
+.workHeaderDescription{
+	padding-right: 100px ;
+}
+
+.workHeaderDescription h2{
+	margin: 15px 0;
 }
 
 .workJumbotron{
@@ -203,11 +222,14 @@ p{
 	margin-top: 1rem;
 }
 
+.workContent{
+	padding: 0 150px;
+}
+
 /* Playground */
 .tab {
 	overflow: hidden;
 	background-color: #ffffff;
-	border-bottom: 1px solid black;
 }
 
 .tablinks{
@@ -217,30 +239,35 @@ p{
 /* Style the buttons inside the tab */
 .tab button {
 	background-color: inherit;
-	float: center;
-	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 1rem 2rem 1rem 0;
+	padding: 0.3rem 2rem;
 	transition: 0.3s;
 	font-size: 16px;
 	font-family: inherit;
+	border: 1px solid #000;
+	text-align: center;
+	border-radius: 2rem;
+	margin-right: 1rem;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-	color: lightseagreen;
+	background-color: black;
+	color: white;
 }
 
 /* Create an active/current tablink class */
-.tablinks.active {
-	font-weight: bold;
-	color: lightseagreen;
+.tab button.active {
+	background-color: black;
+	color: white;
+	border: none;
 }
 
 .tabcontent {
 	display: none;
 	animation: fadeEffect 1s;
+	margin-top: 2rem;
 }
 
 @keyframes fadeEffect {
@@ -267,8 +294,10 @@ p{
 /* About */
 
 .about > img{
-	width: 300px;
-	height: 300px;
+	width: 100%;
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 0.5rem;
 }
 
 .now{
@@ -287,6 +316,7 @@ footer{
 
 footer{
 	padding: 1rem 7rem;
+	margin-top: 2rem;
 }
 
 footer > nav {
@@ -434,6 +464,10 @@ footer > nav {
 
 	footer > p{
 		display: none;
+	}
+
+	.workHeader{
+		grid-template-columns: auto;
 	}
 	
 }

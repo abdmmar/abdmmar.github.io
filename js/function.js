@@ -1,3 +1,4 @@
+// Underline Navbar
 $(window).on("scroll", function(){
     if($(window).scrollTop()){
         $('.navbar').addClass('under');

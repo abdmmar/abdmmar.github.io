@@ -14,8 +14,10 @@ function openPlayground(evt, playgroundName) {
     document.getElementById(playgroundName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
 document.querySelector("#defaultOpen").click();
 
+// Load Design Playground
 const playgroundContent = image => {
     //Create element and get element
     const li = document.createElement(`li`);
