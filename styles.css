@@ -223,7 +223,7 @@ p{
 }
 
 .workContent{
-	padding: 0 150px;
+	padding: 0 300px;
 }
 
 /* Playground */
@@ -316,7 +316,7 @@ footer{
 
 footer{
 	padding: 1rem 7rem;
-	margin-top: 2rem;
+	margin-top: 4rem;
 }
 
 footer > nav {
@@ -468,6 +468,10 @@ footer > nav {
 
 	.workHeader{
 		grid-template-columns: auto;
+	}
+
+	.workHeaderTitle, .workHeaderDescription, .workContent{
+		padding: 0;
 	}
 	
 }
