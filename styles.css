@@ -248,7 +248,7 @@ p{
 	border: 1px solid #000;
 	text-align: center;
 	border-radius: 2rem;
-	margin-right: 0.5rem;
+	margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
 /* Change background color of buttons on hover */
@@ -485,10 +485,20 @@ footer > nav {
 
 	.workHeader{
 		grid-template-columns: auto;
+		gap: 0;
 	}
 
 	.workHeaderTitle, .workHeaderDescription, .workContent{
 		padding: 0;
+	}
+
+	.back {
+		padding: 50px 0 2rem 0;
+	}
+
+	.workHeaderDescription h2{
+		margin: 15px 0;
+		text-align: left;
 	}
 	
 }
