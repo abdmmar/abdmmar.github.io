@@ -67,14 +67,15 @@ img{
 	display: flex;
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 9999;
 	background: white;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .navbar.under{
-	border-bottom: 1px solid rgb(221, 221, 221);
+	/* border-bottom: 1px solid rgb(221, 221, 221); */
+	box-shadow: 0 0 10px rgb(233, 233, 233);
 }
 
 .main-menu {
@@ -195,20 +196,48 @@ main{
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.home > article, .work > article{
+.home article, .work article{
 	padding: 1rem;
 	display: flex;
 	flex-flow: column;
 	border:  0.5px solid rgb(221, 221, 221);
+	border-radius: 0.5rem;
+	transition: transform 500ms;
+}
+
+.home article img, .work > article img{
   	border-radius: 0.5rem;
+}
+
+.home:hover article, .work:hover article{
+	transform: translateX(-5%) ;
+}
+
+.home article:hover ~ article, .work article:hover ~ article{
+	transform: translateX(5%) ;
+}
+
+.home article:hover, .work article:hover{
+	box-shadow: 0 0 10px rgb(233, 233, 233);
+	border: none;
+	background-color: #000;
+	color: white;
+	transform: scale(1.05);
+	z-index: 1;
+}
+
+.home article:hover h3, .work article:hover h3{
+	color: white;
 }
 
 .work img{
 	width: 100%;
 }
+
 .work h3{
 	margin: 2rem 0 0.3rem 0;
 }
+
 p{
 	margin: 0.1rem;
 }
@@ -312,14 +341,25 @@ p{
 .playground {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-gap: 3rem;	
+	grid-gap: 3rem;
+	
 }
 
-.playground > li{
+.playground li{
 	margin-top: 0.5rem;
 }
 
-.playground > li > img{
+.playground li img{
+	transition: transform 500ms;
+}
+
+.playground li img:hover{
+	box-shadow: 0 0 10px rgb(233, 233, 233);
+	transform: scale(1.05);
+	z-index: 1;
+}
+
+.playground li img{
 	border-radius: 0.5rem;
 }
 
