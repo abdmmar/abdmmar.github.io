@@ -22,22 +22,21 @@ clipboard.addEventListener('click', () => {
     document.execCommand('copy');
 
     /* Alert the copied text */
-    tooltip.innerHTML = `Copied`;
+    tooltip.innerHTML = `Email addres copied to clipboard🎉`;
 });
 
 tooltip.addEventListener('mouseout', () => {
-    tooltip.innerHTML = 'Copy';
+    tooltip.innerHTML = 'Copy email to clipboard';
 });
 
 //Responsive Navbar
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const mainMenu = document.getElementsByClassName('main-menu')[0]
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const mainMenu = document.getElementsByClassName('main-menu')[0];
 
 toggleButton.addEventListener('click', () => {
   mainMenu.classList.toggle('active');
   toggleButton.classList.toggle('active')
-})
-
+});
 
 
   

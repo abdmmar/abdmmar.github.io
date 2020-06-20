@@ -23,7 +23,7 @@ a {
 }
 
 a:hover{
-	text-decoration: underline;
+	text-decoration: underline; 
 }
 
 ul {
@@ -92,6 +92,15 @@ img{
 
 .menu li a{
 	display: block;
+	color: black;
+}
+
+.menu li a:hover{
+	font-weight: bold;
+}
+
+.menu li a.active{
+	font-weight: bold;
 }
 
 .toggle-button{
@@ -115,7 +124,7 @@ img{
 /* Main Content */
 
 main{
-    padding: 5rem 7rem;
+    padding: 3rem 7rem;
 }
 
 #headerHome{
@@ -126,9 +135,34 @@ main{
 	margin-top: 20px;
 }
 
+.cta{
+	margin: 40px 0;
+}
+
+.cta a {
+	text-decoration: none;
+    background-color: black;
+    color: white;
+	padding: 0.5rem 2rem;
+	border-radius: 2rem;
+	border: 1px solid black;
+	text-align: center;
+	margin: 20px 0;
+	max-width: 130px;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-out;
+}
+
+.cta a:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+
 .see-more{
 	margin: 40px 0;
 }
+
 .see-more a, .back a{
     text-decoration: none;
     background-color: white;
@@ -377,8 +411,8 @@ footer > nav {
   
 .tooltip .tooltiptext {
 	visibility: hidden;
-	width: 120px;
-	background-color: rgb(0,0,0);
+	width: 250px;
+	background-color: black;
 	color: #fff;
 	text-align: center;
 	border-radius: 6px;
@@ -387,7 +421,7 @@ footer > nav {
 	z-index: 1;
 	bottom: 180%;
 	left: 50%;
-	margin-left: -60px;
+	margin-left: -126px;
 	opacity: 0;
 	transition: opacity 0.4s;
 }
@@ -400,7 +434,7 @@ footer > nav {
 	margin-left: -5px;
 	border-width: 5px;
 	border-style: solid;
-	border-color: rgb(0, 0, 0) transparent transparent transparent;
+	border-color: black transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -454,6 +488,14 @@ footer > nav {
 		font-size: 40px;
 	}
 
+	#available{
+		margin: 10px 0;
+	}
+
+	#available span{
+		display: none;
+	}
+
 	footer{
 		grid-template-columns: 1fr;
 		justify-self: center;
@@ -463,9 +505,10 @@ footer > nav {
 	}
 
 	.tooltip .tooltiptext {
-		bottom: 100%;
+		width: 100px;
+		bottom: 120%;
 		left: 50%;
-		margin-left: -60px;
+		margin-left: -51px;
 	}
 
 	.email > li{
