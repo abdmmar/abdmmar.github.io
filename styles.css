@@ -576,7 +576,11 @@ footer > nav {
 	}
 
 	#headerHome{
-		font-size: 40px;
+		font-size: 28px;
+	}
+
+	#headerHome span br{
+		display: none;
 	}
 
 	#available{
@@ -663,6 +667,14 @@ footer > nav {
 
 	.back {
 		padding: 50px 0 2rem 0;
+	}
+
+	.home:hover article, .work:hover article{
+		transform: none;
+	}
+	
+	.home article:hover ~ article, .work article:hover ~ article{
+		transform: none;
 	}
 }
 
