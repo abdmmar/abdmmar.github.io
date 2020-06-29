@@ -1,11 +1,11 @@
 // Underline Navbar
-$(window).on("scroll", function(){
-    if($(window).scrollTop()){
-        $('.navbar').addClass('under');
-    } else{
-        $('.navbar').removeClass('under');
-    }
-});
+// $(window).on("scroll", function(){
+//     if($(window).scrollTop()){
+//         $('.navbar').addClass('under');
+//     } else{
+//         $('.navbar').removeClass('under');
+//     }
+// });
 
 // Copy Email To Clipboard
 const clipboard = document.querySelector('#clipboard');

@@ -307,6 +307,8 @@ p{
 	background-color: white;
 	width: 100%;
 	border: 0.5px solid rgb(221, 221, 221);
+	transition-duration: 0.4s;
+	transition-timing-function: ease-out;
 }
 
 .nextContent .before{
@@ -332,6 +334,8 @@ p{
 	cursor: pointer;
 	background-color: black;
 	border: 0.5px solid rgb(221, 221, 221);
+	color: white;
+	text-decoration: none;
 }
 
 .nextContent .before:hover a, .nextContent .after:hover a{
