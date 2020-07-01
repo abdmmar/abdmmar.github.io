@@ -54,9 +54,14 @@ img{
 }
 
 /* Header/Navbar */
+.logo p {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
 
 .logo img {
 	width: 50px;
+	display: none;
 }
 
 .navbar {
@@ -192,7 +197,7 @@ main{
 .home, .work{
 	padding: 0.5rem 0;
 	display: grid;
-	grid-gap: 1rem;
+	gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -207,14 +212,6 @@ main{
 
 .home article img, .work article img{
   	border-radius: 0.5rem;
-}
-
-.home:hover article, .work:hover article{
-	transform: translateX(-5%) ;
-}
-
-.home article:hover ~ article, .work article:hover ~ article{
-	transform: translateX(5%) ;
 }
 
 .home article:hover, .work article:hover{
@@ -287,9 +284,15 @@ p{
 
 .workContent{
 	width: 100%;
-	max-width: 800px;
+	max-width: 700px;
 	margin-left: auto;
     margin-right: auto;
+}
+
+.workContent p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.75;
 }
 
 .nextContent{
@@ -341,6 +344,21 @@ p{
 .nextContent .before:hover a, .nextContent .after:hover a{
 	color: white;
 	text-decoration: none;
+}
+
+/* Work Suntree */
+.gallery{
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin: 1rem 0;
+}
+
+.gallery-2{
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin: 1rem 0;
 }
 
 
@@ -484,7 +502,7 @@ footer > nav {
 #clipboard::before{
 	content: '📋';
 	padding: 10px;
-	border: 1px solid black;
+	border: 1px solid rgb(221, 221, 221);
 	border-radius: 0.5rem;
 }
 
@@ -593,6 +611,20 @@ footer > nav {
 
 	#available span{
 		display: none;
+	}
+
+	.gallery{
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		margin: 1rem 0;
+	}
+
+	.gallery-2{
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		margin: 1rem 0;
 	}
 
 	footer{
