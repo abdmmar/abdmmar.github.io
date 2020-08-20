@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah Ammar | About</title>
     <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
-    <link rel="icon" href="asset/logo/Logo.png">
-    <script src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script>
+    <link defer href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -19,9 +18,9 @@
         </div>
         <nav>
             <ul class="social-media">
-                <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-github"></span></a></li>
-                <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-behance"></span></a></li>
-                <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-dribbble"></span></a></li>
+                <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Follow my Instagram"><span class="fab fa-github"></span></a></li>
+                <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Checkout my old project on Behance"><span class="fab fa-behance"></span></a></li>
+                <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Checkout my UI Design on Dribbble"><span class="fab fa-dribbble"></span></a></li>
             </ul>
         </nav>
     </nav>
@@ -51,12 +50,12 @@
         <p>&copy; Copyright 2020, Abdullah Ammar</p>
         <nav>
             <ul class="email">
-                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
-                <li id="clipboard" class="tooltip"><small><span class="tooltiptext" id="myTooltip">Copy email to clipboard</span></small></li>
+                <li><input type="mail" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
+                <li id="clipboard" class="tooltip" tabindex=0><small><span class="tooltiptext" id="myTooltip">Copy email to clipboard</span></small></li>
             </ul>
         </nav>
     </footer>
 
-    <script type="module" src="src/app.js"></script>
+    <script type="module" link rel="preload" src="src/app.js"></script>
 </body>
 </html>

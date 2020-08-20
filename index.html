@@ -12,11 +12,8 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://abdmmar.github.io/asset/profile/2.jpg">
     <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
-    <link rel="stylesheet" href="./src/styles/brands.css">
-    <link rel="stylesheet" href="./src/styles/solid.css">
-    <link rel="icon" href="asset/logo/Logo.png">
-    <script src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script>
+    <link defer href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -28,9 +25,9 @@
         </div>
         <nav>
             <ul class="social-media">
-                <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-github"></span></a></li>
-                <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-behance"></span></a></li>
-                <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-dribbble"></span></a></li>
+                <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Follow my Instagram"><span class="fab fa-github"></span></a></li>
+                <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Checkout my old project on Behance"><span class="fab fa-behance"></span></a></li>
+                <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Checkout my UI Design on Dribbble"><span class="fab fa-dribbble"></span></a></li>
             </ul>
         </nav>
     </nav>
@@ -48,14 +45,6 @@
         <section class="featured">
             <h2>Featured Works &#8628;</h2>
             <div class="work">
-                <!-- <article tabindex=0 data-id="1">
-                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
-                    <div class="work-detail">
-                        <h3>University Expo 2019</h3>
-                        <small>2019 | Brand Identity</small>
-                    </div>
-                </article> -->
-
                 <div class="modal">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -111,46 +100,18 @@
                 </div>
             </div>
         </section>
-        
-        
-        <!-- <section class="home-playground">
-            <h2>Playground &#8628;</h2>
-            <div class="playground">
-                <article tabindex=0>
-                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
-                    <div class="playground-detail">
-                        <h3>University Expo 2019</h3>
-                        <small>2019 | Brand Identity</small>
-                    </div>
-                </article>
-                <article tabindex=0 data-id="1">
-                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
-                    <div class="playground-detail">
-                        <h3>University Expo 2019</h3>
-                        <small>2019 | Brand Identity</small>
-                    </div>
-                </article>
-                <article tabindex=0 data-id="1">
-                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
-                    <div class="playground-detail">
-                        <h3>University Expo 2019</h3>
-                        <small>2019 | Brand Identity</small>
-                    </div>
-                </article>
-            </div>
-        </section>     -->
     </main>
     
     <footer>
         <p>&copy; Copyright 2020, Abdullah Ammar</p>
         <nav>
             <ul class="email">
-                <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
+                <li><input type="mail" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
                 <li id="clipboard" class="tooltip" tabindex=0><small><span class="tooltiptext" id="myTooltip">Copy email to clipboard</span></small></li>
             </ul>
         </nav>
     </footer>
 
-    <script type="module" src="src/app.js"></script>
+    <script type="module" link rel="preload" src="src/app.js"></script>
 </body>
 </html>
