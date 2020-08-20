@@ -25,7 +25,7 @@ const main = () => {
         tooltip.innerHTML = 'Copy email to clipboard';
     });
 
-    if(pathname === `/index.html`){
+    if(pathname !== `/about.html`){
         dataWorks.forEach(workData => workContent(workData));
 
         const modal = document.querySelector(".modal");
