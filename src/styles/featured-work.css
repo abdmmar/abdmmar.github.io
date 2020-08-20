@@ -1,0 +1,59 @@
+.featured{
+	padding: 5rem 0 5rem 0;
+}
+
+.work{
+	padding: 0.5rem 0;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.work article{
+	padding: 1rem;
+	display: flex;
+	flex-flow: column;
+	border:  0.5px solid rgb(221, 221, 221);
+	border-radius: 0.5rem;
+	transition: transform 500ms;
+}
+
+.work article img{
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+.work article:hover{
+	box-shadow: 0 0 10px rgb(233, 233, 233);
+	border: none;
+	background-color: #000;
+	color: white;
+	transform: scale(1.05);
+	z-index: 1;
+}
+
+.work article:hover h3{
+	color: white;
+}
+
+.work article:focus{
+	outline: none;
+	box-shadow: 0 0 10px rgb(233, 233, 233);
+	border: none;
+	background-color: #000;
+	color: white;
+	transform: scale(1.05);
+	z-index: 1;
+}
+
+.work article:focus h3{
+	color: white;
+}
+
+.work h3{
+	margin: 2rem 0 0.3rem 0;
+}
+
+p{
+	margin: 0.1rem;
+}

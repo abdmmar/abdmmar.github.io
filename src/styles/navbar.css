@@ -1,0 +1,41 @@
+.navbar {
+	padding: 1rem 7rem;
+}
+
+.navbar {
+	display: flex;
+	top: 0;
+	background: white;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar.under{
+	/* border-bottom: 1px solid rgb(221, 221, 221); */
+	box-shadow: 0 0 10px rgb(233, 233, 233);
+}
+
+.main-menu {
+	height: 100%;
+}
+
+.menu{
+	display: flex;
+}
+
+.menu > li{
+	padding-right: 30px;
+}
+
+.menu li a{
+	display: block;
+	color: black;
+}
+
+.menu li a:hover{
+	font-weight: bold;
+}
+
+.menu li a.active{
+	font-weight: bold;
+}

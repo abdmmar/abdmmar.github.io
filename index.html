@@ -11,67 +11,134 @@
     <meta property="og:description" content="Hello! I'm Ammar, a computer science student and graphic design enthusiast who passionate to build something fun and useful.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://abdmmar.github.io/asset/profile/2.jpg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/brands.css">
+    <link rel="stylesheet" href="./src/styles/solid.css">
     <link rel="icon" href="asset/logo/Logo.png">
+    <script src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div>
-            <a href="index.html" class="logo">
-                <img src="asset/logo/LogoHeader.png" alt="Ammar's Logo">
-            </a>
-        </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
         <div class="main-menu"> 
             <ul class="menu">
-                <li>&#8618;</li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="playground.html">Playground</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-            <!-- &#9776; -->
         </div>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-github"></span></a></li>
+                <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-behance"></span></a></li>
+                <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer"><span class="fab fa-dribbble"></span></a></li>
+            </ul>
+        </nav>
     </nav>
     
     <main>
         <section>       
             <span class="wave"><h1>&#x1F44B;</h1></span>
-            <h1 id="headerHome">Hello! I'm Ammar, </br>student and graphic design enthusiast <span></br> who passionate to build something fun and useful</span>.</h1>
+            <h1 id="headerHome">Hi! I'm Ammar, </br>computer science student </br>and graphic design enthusiast <span></br> who passionate to build something fun and useful</span>.</h1>
             <p id="available">&#8618; <span>Currently learning Javascript and Progressive Web App. </span>Open for internship and remote-working.</p>
             <div class="cta">
                 <a href="about.html">Get in touch &rarr;</a>
             </div>
         </section>
         
-        
         <section class="featured">
             <h2>Featured Works &#8628;</h2>
-            <div class="home">
-                
-            </div>
-            <div class="see-more">
-                <a href="work.html">See More &rarr;</a>
+            <div class="work">
+                <!-- <article tabindex=0 data-id="1">
+                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
+                    <div class="work-detail">
+                        <h3>University Expo 2019</h3>
+                        <small>2019 | Brand Identity</small>
+                    </div>
+                </article> -->
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>2019 | Brand Identity</h3>
+                            <span class="close-button fas fa-times-circle" tabindex=0></span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-main-title">
+                                <h1>University Expo 2019 </h1>
+                            </div>
+                            <div class="modal-main-description">
+                                <h2>Acara tahunan alumni Husnul Khotimah untuk memperkenalkan universitas yang ada di Indonesia</h2>
+                            </div>
+                        </div>
+                        <div class="modal-jumbotron">
+                            <img src="./src/asset/work/university-expo/header.png" alt="University Expo 2019 logo">
+                        </div>
+                        <div class="modal-content-detail">
+                            <div>
+                                University Expo adalah acara tahunan yang diselenggarakan oleh alumni santri husnul khotimah yang lulus pada tahun sebelumnya.
+                                Bertujuan memberikan informasi mengenai kampus yang ada di seluruh dunia dan cerita mengenai dunia perkuliahan serta tips-tips pembelajaran. 
+                            </div>
+                            <div class="modal-content-images">
+
+                            </div>
+                            <!-- <img src="./src/asset/work/university-expo/logo-variation.jpg" alt="Logo Variation of University Expo 2019">
+                            <img src="./src/asset/work/university-expo/implementation.jpg" alt="implementation of logo in media"> -->
+                        </div>
+                        <div class="modal-footer">
+                            <dl class="modal-footer-role">
+                                <dt>Role</dt>
+                                <dd>Graphic Designer</dd>
+                            </dl>
+                            <dl class="modal-footer-client">
+                                <dt>Client</dt>
+                                <dd>Islah HK 21</dd>
+                            </dl>
+                            <dl class="modal-footer-discipline">
+                                <dt>Discipline</dt>
+                                <dd>Brand Identity</dd>
+                            </dl>
+                            <dl class="modal-footer-sector">
+                                <dt>Sector</dt>
+                                <dd>Education</dd>
+                            </dl>
+                            <dl class="modal-footer-teams">
+                                <dt>Project Team</dt>
+                                <dd>Dzaki Zaidan</dd>
+                                <dd>Faris Saifuddin Wafiq</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
         
-        <section class="home-playground">
+        <!-- <section class="home-playground">
             <h2>Playground &#8628;</h2>
-            <ul class="playground">
-                <li> <img src="asset/pg_design/7.png" alt="Poster: Don't kill anything but time"> </li>
-                <li> <img src="asset/pg_design/14.png" alt="Poster: Read! You'll be better poster"> </li>
-                <li> <img src="asset/pg_design/12.png" alt="Poster: Stay safe everyone poster"> </li>
-            </ul>
-            <div class="see-more">
-                <a href="playground.html">See More &rarr;</a>
+            <div class="playground">
+                <article tabindex=0>
+                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
+                    <div class="playground-detail">
+                        <h3>University Expo 2019</h3>
+                        <small>2019 | Brand Identity</small>
+                    </div>
+                </article>
+                <article tabindex=0 data-id="1">
+                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
+                    <div class="playground-detail">
+                        <h3>University Expo 2019</h3>
+                        <small>2019 | Brand Identity</small>
+                    </div>
+                </article>
+                <article tabindex=0 data-id="1">
+                    <img src="../src/asset/work/1.png" alt="University Expo 2019">
+                    <div class="playground-detail">
+                        <h3>University Expo 2019</h3>
+                        <small>2019 | Brand Identity</small>
+                    </div>
+                </article>
             </div>
-        </section>    
+        </section>     -->
     </main>
     
     <footer>
@@ -79,21 +146,11 @@
         <nav>
             <ul class="email">
                 <li><input type="text" value="abd.ammar.mar@gmail.com" id="mail" readonly></li>
-                <li id="clipboard" class="tooltip"><small><span class="tooltiptext" id="myTooltip">Copy email to clipboard</span></small></li>
+                <li id="clipboard" class="tooltip" tabindex=0><small><span class="tooltiptext" id="myTooltip">Copy email to clipboard</span></small></li>
             </ul>
         </nav>
-        <nav>
-            <ul class="social-media">
-                <li>&#8618;</li>
-                <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer">Behance</a></li>
-                <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
-            </ul>
-        </nav>
-        <!-- <span title="Back To Top">&#9651;</span> -->
     </footer>
 
-    <script src="js/function.js"></script>
-    <script src="js/featured.js"></script>
+    <script type="module" src="src/app.js"></script>
 </body>
 </html>

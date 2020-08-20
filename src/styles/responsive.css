@@ -1,0 +1,126 @@
+@media screen and (max-width: 768px){
+	.navbar, main, footer {
+		padding: 1rem 1rem !important;
+	}
+
+	#headerHome{
+		font-size: 28px;
+	}
+
+	#headerHome span br{
+		display: none;
+	}
+
+	#available{
+		margin: 10px 0;
+	}
+
+	#available span{
+		display: none;
+	}
+
+	footer{
+		flex-direction: column-reverse;
+	}
+
+	.tooltip .tooltiptext {
+		width: 100px;
+		bottom: 120%;
+		left: 50%;
+		margin-left: -51px;
+	}
+
+	.email > li{
+		padding: 10px;
+	}
+
+	footer > nav {
+		justify-self: center;
+	}
+
+	.modal-header h3{
+		font-size: 14px;
+	}
+
+	.modal-main{
+		grid-template-columns: auto;
+		gap: 0;
+	}
+
+	.modal-main-description h2{
+		font-size: 18px;
+	}
+
+	.modal-main-title, .modal-main-description, .modal-content-detail{
+		padding: 0;
+	}
+
+	.modal-content {
+		max-height: 100vh !important;
+		border-radius: 0 !important;
+		width: 100% !important;
+		padding: 1rem !important;
+	}
+	
+	.modal-content-detail p{
+		font-size: 16px;
+	}
+
+    .modal-footer{
+        grid-template-columns: auto auto !important;
+    }
+
+	.modal-main-description h2{
+		margin: 15px 0;
+		text-align: left;
+	}
+
+	.work:hover article{
+		transform: none;
+	}
+	
+	.work article:hover ~ article{
+		transform: none;
+    }
+    
+    .work article{
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .work article img{
+        max-width: 30%;
+    }
+
+    .work h3{
+        margin: 0;
+    }
+
+    .work .work-detail{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and  (max-width: 1150px){
+	.modal-main-title, .modal-main-description, .modal-content-detail{
+		padding: 0;
+	}
+
+	.work:hover article{
+		transform: none;
+	}
+	
+	.work article:hover ~ article{
+		transform: none;
+    }
+    
+    .modal-content {
+        padding: 1rem 2rem !important;
+        width: 70% !important;
+    }
+
+    .modal-footer{
+        grid-template-columns: auto auto;
+    }
+}
