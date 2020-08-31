@@ -1,0 +1,11 @@
+.about{
+    width: 50%;
+}
+
+.about p{
+    margin: 1rem 0;
+}
+
+.about p a{
+    text-decoration: underline;
+}

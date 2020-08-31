@@ -3,6 +3,7 @@
 @import 'featured-work.css';
 @import 'responsive.css';
 @import 'modal-work-detail.css';
+@import 'about.css';
 
 * { 
     box-sizing: border-box; 
@@ -15,10 +16,6 @@ body {
 html {
 	font-family: 'IBM Plex Sans', sans-serif;
 	background: #ffffff;
-}
-
-.title{
-	margin-bottom: 5vh;
 }
 
 /* width */
