@@ -4,7 +4,7 @@ const workContent = workData => {
     const div = document.createElement(`div`);
     const img = document.createElement(`img`);
     const h3 = document.createElement(`h3`);
-    const small = document.createElement(`small`);
+    const small = document.createElement(`p`);
     const work = document.querySelector(`.work`);
 
     article.setAttribute(`tabindex`, `0`);

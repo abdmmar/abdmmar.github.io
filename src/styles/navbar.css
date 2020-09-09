@@ -11,7 +11,6 @@
 }
 
 .navbar.under{
-	/* border-bottom: 1px solid rgb(221, 221, 221); */
 	box-shadow: 0 0 10px rgb(233, 233, 233);
 }
 
@@ -21,6 +20,7 @@
 
 .menu{
 	display: flex;
+	align-items: center;
 }
 
 .menu > li{
@@ -28,12 +28,28 @@
 }
 
 .menu li a{
+	text-decoration: none ;
+	font-weight: bold;
 	display: block;
 	color: black;
+	font-size: 1.2rem;
+	transition: 200ms ease;
+}
+
+.menu li:first-child a{
+	text-decoration: none;
+	font-size: 2.2rem;
+	color: royalblue;
+	transition: 200ms ease;
+}
+
+.menu li:first-child a:hover{
+	color: black;
+	text-decoration: none;
 }
 
 .menu li a:hover{
-	font-weight: bold;
+	text-decoration: underline;
 }
 
 .menu li a.active{

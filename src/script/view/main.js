@@ -7,23 +7,6 @@ const main = () => {
     const clipboard = document.querySelector('#clipboard');
     const tooltip = document.querySelector('#myTooltip');
     const pathname = window.location.pathname;
-    
-    clipboard.addEventListener('click', () => {
-        /* Select the text field */
-        const copyText = document.querySelector('#mail');
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-        /* Copy the text inside the text field */
-        document.execCommand('copy');
-        
-        /* Alert the copied text */
-        tooltip.innerHTML = `Email addres copied to clipboard🎉`;
-    });
-    
-    tooltip.addEventListener('mouseout', () => {
-        tooltip.innerHTML = 'Copy email to clipboard';
-    });
 
     if(pathname !== `/about.html`){
         dataWorks.forEach(workData => workContent(workData));

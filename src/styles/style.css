@@ -9,6 +9,10 @@
     box-sizing: border-box; 
 }
 
+:root{
+	font-size: 16px;
+}
+
 body { 
     margin: 0; 
 }
@@ -83,7 +87,7 @@ img{
 /* Main Content */
 
 main{
-    padding: 0 7rem;
+    padding: 0 7rem 5rem;
 }
 
 #headerHome{

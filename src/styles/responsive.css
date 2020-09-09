@@ -99,7 +99,15 @@
 
     .work .work-detail{
         margin-left: 1rem;
-    }
+	}
+	
+	.about{
+		flex-direction: column !important;
+	}
+
+	.about-content{
+		width: 100% !important;
+	}
 }
 
 @media screen and (min-width: 769px) and  (max-width: 1150px){
@@ -122,5 +130,13 @@
 
     .modal-footer{
         grid-template-columns: auto auto;
-    }
+	}
+	
+	.about-content{
+		width: 70% !important;
+	}
+
+	.about .social-media{
+		margin-left: 1rem;
+	}
 }
