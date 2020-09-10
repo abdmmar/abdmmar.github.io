@@ -87,6 +87,10 @@ const detailWorks = [
       <a href="https://github.com/abdmmar/dicoding-frontend" target="_blank"> Github </a>
       <h3>Article that help me:</h3>
       <a href="https://notebook.hounder.co/building-a-reusable-front-end-development-project-using-webpack-and-tailwind-css-df1bddbce59" target="_blank"> Building a Reusable Front-end Development Project using Webpack and Tailwind CSS </a>
+      <h3>Mockup</h3>
+      <img src="./src/asset/work/4_3.png" alt="Mockup Sinema Indonesia" loading="lazy">
+      <h3>Final Product</h3>
+      
       `,
       images : [
           `./src/asset/work/4_2.png`
