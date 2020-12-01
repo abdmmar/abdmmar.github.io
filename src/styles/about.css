@@ -1,24 +1,14 @@
-.about{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about-content{
-    width: 50%;
-}
-
-.about-content p{
-    margin: 1rem 0;
-    font-size: 1.5rem;
-}
-
-.about-content p a{
-    text-decoration: underline;
-    color: blue;
-}
-
-.social-media{
+.about-desc {
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.this-website p {
+  max-width: 450px;
 }

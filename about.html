@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About • Abdullah Ammar</title>
-    <link rel='icon' type='image/png' href='/favicon.png' />
-    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
-    <script defer src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script>
-    <link defer href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="main-menu"> 
-            <ul class="menu">
-                <li><a href="/">✤</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </div>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="../src/styles/style.css" />
+    <!-- <script defer src="https://kit.fontawesome.com/485442bde6.js" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <nav class="row menu">
+      <ul class="menu">
+        <a class="logo" href="/">✤</a>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+      </ul>
     </nav>
 
     <main>
-        <h1 class="title">Halo!</h1>
-        <div class="about">
-            <section class="about-content">
-                <p>
-                    I'm Abdullah Ammar, a computer science student and graphic design enthusiast from Jakarta, Indonesia.
-                    Passionate to making fun things. Currently learning Javascript, building this portfolio, and reading 1984 from George Orwell.
-                </p>
-                <p>
-                    In my spare time I enjoy designing user interface, poster, or creating micro animation that maybe I can implement in my next project. 
-                </p>
-                <p>
-                    Interesting in Open Source Software especially in web development
-                </p>
-                <hr>
-                <h2>This Website</h2>
-                    <article>
-                        <p>
-                            This website is my experimental site that often changes depending on what I am studying now. 
-                            It's built primarily in HTML, CSS, and Javascript and it's hosted by Github Pages.
-                        </p>
-                </article>
-            </section>
-            <section>
-                <ul class="social-media">
-                    <li><a href="https://www.instagram.com/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Follow my Instagram">Instagram @abdmmar</a></li>
-                    <li><a href="https://www.behance.net/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Checkout my old project on Behance">Behance @abdmmar</a></li>
-                    <li><a href="https://www.dribbble.com/abdmmar" target="_blank" rel="noopener noreferrer" aria-label="Checkout my UI Design on Dribbble">Dribbble @abdmmar</a></li>
-                    <li><a href="mailto:abd.ammar.mar@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email me ">Email abd.ammar.mar@gmail.com</a></li>
-                </ul>
-            </section>
+      <section class="row about">
+        <div class="about-desc">
+          <h2 class="title">Halo!</h2>
+          <div class="about-content">
+            <p>
+              I'm Abdullah Ammar, a computer science student and graphic design
+              enthusiast from Jakarta, Indonesia. Passionate to making fun
+              things. Currently learning Javascript, building this portfolio,
+              and reading 1984 from George Orwell.
+            </p>
+            <p>
+              In my spare time I enjoy designing user interface, poster, or
+              creating micro animation that maybe I can implement in my next
+              project.
+            </p>
+            <p>
+              Interesting in Open Source Software especially in web development
+            </p>
+          </div>
         </div>
+      </section>
+      <section class="row this">
+        <div class="this-website">
+          <h3>This Website</h3>
+          <p>
+            This website is my experimental site that often changes depending on
+            what I am studying now. It's built primarily in HTML, CSS, and
+            Javascript and hosted by Github Pages.
+          </p>
+          <a
+            href="https://www.github.com/abdmmar/abdmmar.github.io"
+            target="_blank"
+            >Github →</a
+          >
+        </div>
+      </section>
+      <section class="row soc-media">
+        <div class="soc-media">
+          <h3 class="soc-media-title">Social Media</h3>
+          <ul class="soc-media-link">
+            <li>
+              <a
+                href="https://www.instagram.com/abdmmar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow my Instagram"
+                >Instagram →</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/abdmmar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Say hi! on Discord"
+                >Discord →</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.github.com/abdmmar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="My Repository on Github"
+                >Github →</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.dribbble.com/abdmmar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Checkout my UI Design on Dribbble"
+                >Dribbble →</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:abd.ammar.mar@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email me "
+                >Email →</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <script type="module" link rel="preload" src="src/app.js"></script>
-</body>
+  </body>
 </html>
