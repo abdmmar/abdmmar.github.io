@@ -126,7 +126,7 @@ p {
 hr.section {
   border: none;
   height: var(--hr-weight);
-  background-color: black;
+  background-color: #dddddd;
 }
 
 .grid {

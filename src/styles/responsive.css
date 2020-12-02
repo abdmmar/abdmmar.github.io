@@ -1,4 +1,12 @@
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .project-title h1 {
+    margin: 0.5rem 0 !important;
+  }
+
   .row {
     padding: 2rem !important;
   }
