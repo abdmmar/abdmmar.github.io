@@ -36,7 +36,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1150px) {
-  .about-content p {
+  /* .about-content p {
     margin-right: 20px;
-  }
+  } */
 }

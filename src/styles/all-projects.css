@@ -1,3 +1,12 @@
 .all-projects h2 {
   margin-bottom: 3rem;
 }
+
+.next-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next-project .disabled {
+  pointer-events: none;
+}

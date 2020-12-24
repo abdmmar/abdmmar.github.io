@@ -4,9 +4,7 @@
 }
 
 .about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  columns: 250px 3;
 }
 
 .this-website p {
