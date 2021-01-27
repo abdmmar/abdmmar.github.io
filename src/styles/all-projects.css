@@ -7,6 +7,29 @@
   justify-content: space-between;
 }
 
+.newest-project,
+.oldest-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newest-project {
+  text-align: left;
+}
+
+.oldest-project {
+  text-align: right;
+}
+
+.newest-project div {
+  padding: 10px 10px 10px 0;
+}
+
+.oldest-project div {
+  padding: 10px 0 10px 10px;
+}
+
 .next-project .disabled {
   pointer-events: none;
 }

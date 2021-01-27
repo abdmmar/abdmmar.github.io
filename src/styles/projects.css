@@ -17,6 +17,10 @@
   margin-bottom: 0;
 }
 
+.project-desc ul li {
+  margin: 10px 0;
+}
+
 .span-row {
   grid-column: 1 / 9;
 }
